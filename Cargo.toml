@@ -33,7 +33,7 @@ axum = ["dep:axum", "dep:tokio", "dep:tokio-util"]
 tungstenite = ["dep:tungstenite"]
 
 [dependencies]
-automerge = { version = "0.6.0" }
+automerge = { "git" = "https://github.com/automerge/automerge.git" , "rev" = "a2ba7326ec886a9e6d02377fd904dbdde35eb89d"}
 axum = { version = "0.6.18", features = ["ws"], optional = true }
 uuid = { version = "1.2.2"}
 crossbeam-channel = { version = "0.5.8" }
@@ -67,4 +67,4 @@ test-log = { version = "0.2.12", features = ["trace"] }
 env_logger = "0.10.0"
 tracing-subscriber = { version = "0.3.17", features = ["fmt", "env-filter"] }
 itertools = "0.11.0"
-autosurgeon = "0.8.0"
+autosurgeon = {git = "https://github.com/nikitalita/autosurgeon", rev = "b7ac13f9aea141a2c194092c369601cb523ec2c6"}

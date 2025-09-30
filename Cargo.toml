@@ -33,9 +33,9 @@ axum = ["dep:axum", "dep:tokio", "dep:tokio-util"]
 tungstenite = ["dep:tungstenite"]
 
 [dependencies]
-automerge = { "git" = "https://github.com/automerge/automerge.git" , "rev" = "a2ba7326ec886a9e6d02377fd904dbdde35eb89d"}
+automerge = { "git" = "https://github.com/automerge/automerge.git" , "rev" = "41edfcae28c06ef7b493c96600596624f98706c6"}
 axum = { version = "0.6.18", features = ["ws"], optional = true }
-uuid = { version = "1.2.2"}
+uuid = { version = "1.2.2", features = ["v4"] }
 crossbeam-channel = { version = "0.5.8" }
 parking_lot = { version = "0.12.1" }
 futures = { version = "0.3.28" }
